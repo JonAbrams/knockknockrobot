@@ -9,4 +9,9 @@ const T = new Twit({
   access_token_secret: process.env.ACCESS_SECRET
 });
 
-// TODO: Make a bot
+const stream = T.stream('statuses/filter', { track: '@knocknockrobot' });
+
+stream.on('tweet', function (tweet) {
+  if (!/who.s there/.test(tweet.text)) return;
+  console.log(tweet);
+});
