@@ -1,0 +1,23 @@
+{
+  "name": "knockknockrobot",
+  "version": "1.0.0",
+  "description": "A twitter bot for generating knock knock jokes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "knock",
+    "knock",
+    "who's",
+    "there"
+  ],
+  "author": "Jon Abrams",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "twit": "^2.1.1"
+  }
+}
